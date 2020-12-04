@@ -3,9 +3,11 @@
 Austin Marshburn, Peter Mancici, Daniel Pickett
 1102-001
 Project 1
+This program asks the user for their party size. Depending on the amount of 
+people, the program decides where they should sit at.
 
 *******************************************************************************/
-/*
+
 #include <stdio.h>
 
 int main()
@@ -17,27 +19,27 @@ int main()
     
     printf("Your party has a size of %d.\n\n", iPeople);
     
-        if(iPeople = 1)
+        if(iPeople == 1)
         {
             printf("Please sit at bar seat.\n");
         }
         
-        else if(iPeople = 2)
+        else if(iPeople == 2)
         {
             printf("Please sit at small table.\n");
         }
         
-        else if(iPeople = 3 || 4)
+        else if(iPeople == 3 || 4)
         {
             printf("Please sit at medium table.\n");
         }
         
-        else if(iPeople = 5 || 6)
+        else if(iPeople == 5 || 6)
         {
             printf("Please sit at large table.\n");
         }
         
-        else if(iPeople = 7 || 8)
+        else if(iPeople == 7 || 8)
         {
             printf("Please sit at a booth.\n");
         }
@@ -50,42 +52,3 @@ int main()
 
     return 0;
 }
-******************************************************************
-*/
-
-#include <stdio.h>
-
-int main()
-{
-    int iPeople;
-    
-    printf("How many people are in your party? ");
-    scanf("%d", &iPeople);
-    
-    printf("Your party has a size of %d.\n\n", iPeople);
-
-        switch (iPeople)
-    {
-         case 1:
-            printf("Case1");
-            break;
-         case 2:
-            printf("Case2");
-            break;
-         case 3:
-            printf("Case3 or 4");
-            break;
-         case 5:
-            printf("Case5 or 6");
-            break;
-         default:
-            printf("Default ");
-    }
-    return 0;
-}
-
-
-
-
-
-
