@@ -1,0 +1,64 @@
+/******************************************************************************
+
+Insurance Calculator
+Daniel Pickett 12/6/2020 from 6:32pm to 9:44pm
+
+Car insurance for the young and old
+*******************************************************************************/
+#include <stdio.h>
+#include <stdio.h>
+
+#define TRUE 1
+#define FALSE 0
+
+int userage;
+int Age1;
+int Age2;
+int Age2dis;
+int Age3;
+int Age4;
+int good;
+
+int main()
+{
+    printf("Hello User\n");
+    printf("Please enter your age?\n");
+    scanf("%d", &userage);
+    
+    if (userage < 15);
+        {
+        printf("No insurance available \n");
+        }
+        if (15 < userage < 25);
+        {
+        Age1 = 5000;
+        printf("Your insurance is $%d per year until your 25th birthday. \n", Age1);
+        }
+        if (24 < userage < 35);
+        {
+        Age2 = 3500;
+        printf("Your insurance is $%d per year until your 35th birthday. \n", Age2);
+        printf("Are you a good driver? \n enter 1 \n if not enter 0 \n");
+        scanf("%d", &good);
+            if (good == TRUE);
+            {
+            Age2dis = Age2 - (Age2 * .02);
+            printf("Your insurance is discounted at $%d per year until your 35th birthday. \n", Age2dis);
+            }
+            if (good == FALSE);
+            {
+            printf("Your insurance is still $%d per year until your 35th birthday. \n", Age2);
+            }
+        }
+        if (34 < userage < 50);
+        {
+        Age3 = 2800;
+        printf("Your insurance is $%d per year until your 50th birthday. \n", Age3);
+        }
+        if (userage > 49);
+        {
+        Age4 = 1500;
+        printf("Your insurance is $%d per year and will remain that rate. \n", Age4);
+        }
+    return 0;
+}
