@@ -16,6 +16,7 @@ int main()
     
     printf("************* |WELCOME| *************\n");
     printf("How many people are in your party? ");
+    
     scanf("%d", &iPeople);
     
     printf("Your party has a size of %d person(s).\n\n", iPeople);
