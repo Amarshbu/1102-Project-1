@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main()
+{
+  
+int n1, n2, n3;
+  
+// get input 3 numbers from user
+  
+printf("Enter three numbers seperated by a space :\n");
+  
+scanf("%d %d %d", &n1, &n2, &n3);
+  
+// if n1 is greater than n2 then go to if block
+
+if (n1 > n2)
+   {
+       // if n1 is greater than n3 then n1 is the bigger number
+      
+if (n1 > n3)
+printf("\n%d is the bigger number", n1);
+  
+// otherwise n3 is the bigger number
+  
+else
+printf("\n%d is the bigger number", n3);
+}
+  
+   // otherwise go to else block
+  
+   else
+   {
+       // if n2 is greater than n3 then n2 is the bigger number
+      
+if (n2 > n3)
+printf("\n%d is the bigger number", n2);
+  
+// otherwise n3 is the bigger number
+  
+else
+printf("\n%d is the bigger number", n3);
+}
+
+return 0;
+}
