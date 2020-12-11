@@ -1,5 +1,5 @@
 /******************************************************************************
-Insurance Calculator
+Insurance Calculator v1
 Daniel Pickett, Peter Mancini, Austin Marshburn
 1102-001
 This program calculates the rates of car insurance 
@@ -7,58 +7,56 @@ based on age of user
 *******************************************************************************/
 #include <stdio.h>
 
-/*int Age1 = 5000;
-int Age2 = 3500;
-int Age3 = 2800;
-int Age4 = 1500;
-*/
-
 int main()
 {
     int good;
     int Age2dis;
-    int userage;
+    int userAge;
+    int rateFinal;
+    int rateFinalDiscounted;
     
     printf("Hello User!\n");
     printf("Please enter your age:\n");
-    scanf("%d", &userage);
+    scanf("%d", &userAge);
     
-        if (userage < 25);
-        {
-        printf("Your insurance is $5,000 per year until your 25th birthday. \n");
-        }
+    if (userAge < 25)
+    {
+    (rateFinal = 5000);
+    printf("Your insurance is $5,000 per year until your 25th birthday. \n");
+    }
         
-        if (25 <= userage < 35);
-        {
-        printf("Your insurance is $3,500 per year until your 35th birthday. \n");
-        }
+    else if (userAge < 35)
+    {
+    (rateFinal = 3500);
+    printf("After your 25th birthday, your insurance is $3,500 per year until your 35th birthday. \n");
+    }
         
-    
-    
-        if (34 < userage < 50);
-        {
-        printf("Your insurance is $2,800 per year until your 50th birthday. \n");
-        }
+    else if (userAge < 50)
+    {
+    (rateFinal = 2800);
+    printf("After your 35th birthday, your insurance is $2,800 per year until your 50th birthday. \n");
+    }
         
-        if (userage > 49);
-        {
-        printf("Your insurance is $1,500 per year and will remain that rate. \n");
-        }
-    
-    
+    else if (userAge > 49)
+    {
+    (rateFinal = 1500);
+    printf("After your 50th birthday, your insurance is $1,500 per year and will remain that rate. \n");
+    }
+        
     printf("Are you a good driver?\n -Enter 1 for YES\n -Enter 0 for NO\n");
     scanf("%d", &good);
         
-        if (good == 1);
-        {
-        Age2dis = 3500 - (3500 * .02);
-        printf("Your insurance is discounted at $%d per year until your 35th birthday. \n", Age2dis);
-        }
+    if (good == 1)
+    {
+    rateFinalDiscounted = rateFinal - (rateFinal * .02);
+    printf("Your insurance is discounted at $%d per year with the Good Drivers Discount. \n", rateFinalDiscounted);
+    }
     
-        if (good == 0);
-        {
-        printf("Your insurance is still $3,500 per year until your 35th birthday. \n");
-        }
+    else if (good == 0)
+    {
+    printf("Your insurance is still $%d per year without the Good Drivers Discount. \n", rateFinal);
+    }
         
     return 0;
 }
+
