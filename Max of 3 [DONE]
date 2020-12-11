@@ -18,20 +18,19 @@ int main()
     if (n1 > n2)
     {
         if (n1 > n3)
-            printf("\n%d is the bigger number", n1);
+        printf("\n%d is the bigger number", n1);
   
         else
-            printf("\n%d is the bigger number", n3);
+        printf("\n%d is the bigger number", n3);
     }
 
     else
     {
         if (n2 > n3)
-            printf("\n%d is the bigger number", n2);
+        printf("\n%d is the bigger number", n2);
 
         else
-            printf("\n%d is the bigger number", n3);
+        printf("\n%d is the bigger number", n3);
     }
-
 return 0;
 }
